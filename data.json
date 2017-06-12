@@ -1,0 +1,84 @@
+[
+    {
+        "kategori": [
+            "john terry",
+            "chealsea",
+            "Juventus",
+            "arsenal",
+            "real madrid",
+            "ac milan",
+            "Barcelona",
+            "manchestester united",
+            "ajax",
+            "inter milan",
+            "bayern mucnchen",
+            "liverpool",
+            "jersey",
+            "shinguard",
+            "deker"
+        ],
+        "id": "323"
+    },
+    {
+        "kategori": [
+            "diving",
+            "fin",
+            "selancar",
+            "surfing"
+        ],
+        "id": "1945"
+    },
+    {
+        "kategori": [
+            "pelampung",
+            "topi renang",
+            "kolam",
+            "baju renang",
+            "kacamata renang"
+        ],
+        "id": "472"
+    },
+    {
+        "kategori": [
+            "raket",
+            "badminton",
+            "shuttlecock",
+            "kok",
+            "cock",
+            "net"
+        ],
+        "id": "1590"
+    },
+    {
+        "kategori": [
+            "senar",
+            "pancing",
+            "umpan",
+            "kail",
+            "fishing",
+            "reel",
+            "mancing"
+        ],
+        "id": "579"
+    },
+    {
+        "kategori": [
+            "raket",
+            "tenis",
+            "bola tenis"
+        ],
+        "id": "582"
+    },
+    {
+        "kategori": [
+            "nasi goreng",
+            "makanan",
+            "minuman",
+            "cemilan",
+            "snack",
+            "bumbu",
+            "Bahan Mentah"
+        ],
+        "id": "139"
+    }
+]
