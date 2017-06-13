@@ -5,11 +5,14 @@ const fs = require("fs"),
 let controllers = {};
 
 controllers.giftRecomendation = (req, res, next) => {
-  const reqData = JSON.parse(req.body.data);
+  const reqData = req.body.recomendation;
+
   let detailData = [];
-  reqData.detail.forEach(detail => {
-    detail.data.forEach(data => {
-      detailData.push(data);
+  reqData.forEach(recomendation => {
+    recomendation.data.forEach(data => {
+      data.forEach(dat => {
+        detailData.push(dat);
+      });
     });
   });
 
@@ -40,7 +43,6 @@ controllers.giftRecomendation = (req, res, next) => {
     });
 
     req.user = constArr;
-    console.log(constArr);
     return next();
   });
 };
