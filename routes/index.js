@@ -14,6 +14,8 @@ router.delete("/birthday/:id", controllers.deleteBirth);
 router.get("/scrape", cheerio);
 
 router.post("/recomendation", analyze.giftRecomendation, bklpk.reqGift);
+// router.post("/recomendation", bklpk.reqGift);
+// router.get("/recomendation", bklpk.getGift);
 
 // router.post('/recomendation', recomendations.searchs)
 

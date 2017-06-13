@@ -5,7 +5,8 @@ const fs = require("fs"),
 let controllers = {};
 
 controllers.giftRecomendation = (req, res, next) => {
-  const reqData = JSON.parse(req.body.data);
+  const reqData = req.body.data;
+  console.log(reqData);
 
   const detailData = reqData.detail[0]; //misal dapet g dapet list yang semua like, kirim temen2nya nanti digabung disini baru di proses
   fs.readFile(filePath, (err, data) => {

@@ -15,6 +15,7 @@
     "debug": "~2.6.3",
     "dotenv": "^4.0.0",
     "express": "~4.15.2",
+    "fetch": "^1.1.0",
     "firebase": "^4.1.2",
     "google-auth-library": "^0.10.0",
     "jsonwebtoken": "^7.4.1",
