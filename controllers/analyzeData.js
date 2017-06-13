@@ -5,10 +5,14 @@ const fs = require("fs"),
 let controllers = {};
 
 controllers.giftRecomendation = (req, res, next) => {
-  const reqData = req.body.data;
-  console.log(reqData);
+  const reqData = JSON.parse(req.body.data);
+  let detailData = [];
+  reqData.detail.forEach(detail => {
+    detail.data.forEach(data => {
+      detailData.push(data);
+    });
+  });
 
-  const detailData = reqData.detail[0]; //misal dapet g dapet list yang semua like, kirim temen2nya nanti digabung disini baru di proses
   fs.readFile(filePath, (err, data) => {
     if (err) throw err;
     const refData = JSON.parse(data);
@@ -18,7 +22,7 @@ controllers.giftRecomendation = (req, res, next) => {
       ref.kategori.forEach(kat => {
         let bool = false;
         let count = 0;
-        detailData.data.forEach(dat => {
+        detailData.forEach(dat => {
           if (new RegExp(kat).test(dat)) {
             bool = true;
             count++;
@@ -36,6 +40,7 @@ controllers.giftRecomendation = (req, res, next) => {
     });
 
     req.user = constArr;
+    console.log(constArr);
     return next();
   });
 };

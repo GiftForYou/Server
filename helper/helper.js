@@ -25,17 +25,13 @@ util.arrangeData = a => {
   });
 
   if (arr.length > 5) {
-    console.log("dipotong");
     arr = arr.slice(0, 5);
-  } else if (arr.length < 5) {
-    arr[0].rand = 5 - arr.length;
   }
 
   while (arr.length < 5) {
     arr.unshift(arr[0]);
   }
 
-  console.log(arr);
   return arr;
 };
 
