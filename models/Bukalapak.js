@@ -3,7 +3,6 @@ const util = require("../helper/helper");
 let blapak = {};
 
 blapak.getbykat = (stringkat, callback) => {
-  console.log("masuk loop APi bklpk");
   stringkat = util.arrangeData(stringkat);
   let recProduct = [];
   var onComplete = function() {
