@@ -27,9 +27,9 @@ controllers.giftRecomendation = (req, res, next) => {
 
         if (bool === true) {
           if (count > 1) {
-            constArr.unshift({ searchString: kat });
+            constArr.unshift({ searchString: kat, priority: count });
           } else {
-            constArr.push({ katid: ref.id });
+            constArr.push({ katid: ref.id, priority: 0 });
           }
         }
       });
