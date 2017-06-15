@@ -10,6 +10,7 @@ util.arrangeData = a => {
   }
 
   let arr = shuffle(a);
+
   arr = arr.sort(function compare(a, b) {
     if (a.priority > b.priority) {
       return -1;
